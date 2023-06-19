@@ -1,0 +1,179 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://TileMaps/CustomDirtAutoTile.tres" type="TileSet" id=1]
+[ext_resource path="res://FloaterPath.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://WorldComplete.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Objets/Coin.tscn" type="PackedScene" id=5]
+[ext_resource path="res://DeathBarrier.tscn" type="PackedScene" id=6]
+
+[sub_resource type="Curve2D" id=1]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, -96, 96, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=2]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, -32, 128, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=3]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 160, 64, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=4]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 256, 0, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=5]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, -96, 32, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, -96, 32, 0, 0, 0, 0, -64, -64, 0, 0, 0, 0, -96, 32, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=6]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96 )
+}
+
+[sub_resource type="Curve2D" id=7]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, -160, 0, -180.312, 2.47487, 180.312, -2.47487, 0, -133.333, 0, 0, 0, 0, 160, 0, 131.522, 5.77471, -131.522, -5.77471, 0, 128, 0, 0, 0, 0, -160, 0 )
+}
+
+[sub_resource type="Curve2D" id=8]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 64, 128, 0, 0, 0, 0, 64, 128, 0, 0, 0, 0, 64, 0 )
+}
+
+[node name="World 3" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+world_scene = "res://World 3.tscn"
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PackedInt32Array( -262147, 0, 1, -262146, 0, 65536, -262145, 0, 65536, -327680, 0, 65536, -327679, 0, 65536, -327678, 0, 65536, -327677, 0, 65536, -327676, 0, 65536, -327675, 0, 65536, -327674, 0, 65536, -327673, 0, 65536, -327672, 0, 65536, -327671, 0, 65536, -327670, 0, 2, -196613, 0, 1, -196612, 0, 65536, -196611, 0, 65540, -196610, 0, 196619, -196609, 0, 196619, -262144, 0, 196619, -262143, 0, 196619, -262142, 0, 196619, -262141, 0, 196619, -262140, 0, 196619, -262139, 0, 196619, -262138, 0, 196619, -262137, 0, 196619, -262136, 0, 196619, -262135, 0, 196619, -262134, 0, 131074, -131078, 0, 1, -131077, 0, 65540, -131076, 0, 3, -131075, 0, 131072, -131074, 0, 131072, -131073, 0, 131072, -196608, 0, 131072, -196607, 0, 131072, -196606, 0, 131072, -196605, 0, 4, -196604, 0, 196619, -196603, 0, 196619, -196602, 0, 196619, -196601, 0, 196619, -196600, 0, 196619, -196599, 0, 196619, -196598, 0, 131074, -65543, 0, 1, -65542, 0, 65540, -65541, 0, 196619, -65540, 0, 131074, -131069, 0, 65537, -131068, 0, 4, -131067, 0, 196619, -131066, 0, 196619, -131065, 0, 196619, -131064, 0, 196619, -131063, 0, 196619, -131062, 0, 131074, -7, 0, 131073, -6, 0, 196619, -5, 0, 196619, -4, 0, 131074, -65532, 0, 65537, -65531, 0, 4, -65530, 0, 196619, -65529, 0, 196619, -65528, 0, 196619, -65527, 0, 196619, -65526, 0, 65539, -65525, 0, 2, 65529, 0, 131073, 65530, 0, 196619, 65531, 0, 3, 65532, 0, 65538, 65534, 0, 5, 5, 0, 131073, 6, 0, 196619, 7, 0, 196619, 8, 0, 196619, 9, 0, 196619, 10, 0, 196619, 11, 0, 131074, 131065, 0, 131073, 131066, 0, 196619, 131067, 0, 131074, 131070, 0, 8, 131071, 0, 9, 65536, 0, 196610, 65540, 0, 1, 65541, 0, 65540, 65542, 0, 3, 65543, 0, 131072, 65544, 0, 131072, 65545, 0, 131072, 65546, 0, 131072, 65547, 0, 65538, 196601, 0, 131073, 196602, 0, 196619, 196603, 0, 65539, 196604, 0, 65536, 196605, 0, 9, 196606, 0, 65544, 196607, 0, 65538, 131076, 0, 131073, 131077, 0, 3, 131078, 0, 65538, 131090, 0, 5, 131106, 0, 5, 262137, 0, 131073, 262138, 0, 196619, 262139, 0, 196619, 262140, 0, 196619, 262141, 0, 131074, 196610, 0, 196608, 196611, 0, 10, 196612, 0, 65540, 196613, 0, 131074, 196617, 0, 196608, 196618, 0, 196609, 196619, 0, 196609, 196620, 0, 196609, 196621, 0, 196609, 196622, 0, 7, 196626, 0, 65542, 196627, 0, 196609, 196628, 0, 7, 196637, 0, 1, 196638, 0, 65536, 196639, 0, 65536, 196640, 0, 65536, 196641, 0, 65536, 196642, 0, 11, 327673, 0, 65537, 327674, 0, 4, 327675, 0, 196619, 327676, 0, 196619, 327677, 0, 131074, 262147, 0, 131073, 262148, 0, 196619, 262149, 0, 131074, 262158, 0, 65541, 262164, 0, 65541, 262173, 0, 65537, 262174, 0, 4, 262175, 0, 196619, 262176, 0, 3, 262177, 0, 131072, 262178, 0, 65538, 393210, 0, 131073, 393211, 0, 196619, 393212, 0, 196619, 393213, 0, 131074, 327683, 0, 131073, 327684, 0, 196619, 327685, 0, 196615, 327686, 0, 196610, 327694, 0, 65541, 327700, 0, 8, 327701, 0, 2, 327710, 0, 131073, 327711, 0, 196619, 327712, 0, 131074, 458742, 0, 1, 458743, 0, 65536, 458744, 0, 65536, 458745, 0, 65536, 458746, 0, 65540, 458747, 0, 196619, 458748, 0, 196619, 458749, 0, 131074, 393218, 0, 196608, 393219, 0, 196614, 393220, 0, 3, 393221, 0, 65538, 393230, 0, 131077, 393236, 0, 131073, 393237, 0, 131074, 393245, 0, 1, 393246, 0, 131078, 393247, 0, 131072, 393248, 0, 65538, 524277, 0, 1, 524278, 0, 65540, 524279, 0, 196619, 524280, 0, 196619, 524281, 0, 196619, 524282, 0, 196619, 524283, 0, 196619, 524284, 0, 196619, 524285, 0, 65539, 524286, 0, 2, 458755, 0, 65537, 458756, 0, 65545, 458759, 0, 196608, 458760, 0, 196610, 458767, 0, 5, 458772, 0, 65546, 458773, 0, 65547, 458774, 0, 10, 458775, 0, 65536, 458776, 0, 65536, 458777, 0, 65536, 458778, 0, 65536, 458779, 0, 65536, 458780, 0, 65536, 458781, 0, 131078, 458782, 0, 65538, 589813, 0, 131073, 589814, 0, 196619, 589815, 0, 196619, 589816, 0, 196619, 589817, 0, 3, 589818, 0, 131072, 589819, 0, 131072, 589820, 0, 131072, 589821, 0, 131072, 589822, 0, 65547, 589823, 0, 196609, 524288, 0, 196610, 524292, 0, 131077, 524299, 0, 196613, 524303, 0, 65541, 524308, 0, 65541, 524310, 0, 131073, 524311, 0, 196619, 524312, 0, 3, 524313, 0, 131072, 524314, 0, 131072, 524315, 0, 4, 524316, 0, 3, 524317, 0, 65538, 655348, 0, 1, 655349, 0, 65540, 655350, 0, 196619, 655351, 0, 196619, 655352, 0, 196619, 655353, 0, 131074, 589838, 0, 196608, 589839, 0, 196612, 589844, 0, 131075, 589845, 0, 196609, 589846, 0, 65544, 589847, 0, 4, 589848, 0, 131074, 589851, 0, 65546, 589852, 0, 65538, 720883, 0, 1, 720884, 0, 65540, 720885, 0, 196619, 720886, 0, 196619, 720887, 0, 196619, 720888, 0, 196619, 720889, 0, 131074, 720892, 0, 1, 720893, 0, 65536, 720894, 0, 65536, 720895, 0, 2, 655375, 0, 65541, 655380, 0, 65541, 655383, 0, 65537, 655384, 0, 65547, 655385, 0, 196609, 655386, 0, 196609, 655387, 0, 65543, 786419, 0, 131073, 786420, 0, 196619, 786421, 0, 196619, 786422, 0, 196619, 786423, 0, 196619, 786424, 0, 196619, 786425, 0, 196615, 786426, 0, 196610, 786428, 0, 65537, 786429, 0, 131072, 786430, 0, 131072, 786431, 0, 65545, 720902, 0, 1, 720903, 0, 65536, 720904, 0, 9, 720905, 0, 196609, 720906, 0, 196609, 720907, 0, 196609, 720908, 0, 10, 720909, 0, 65536, 720910, 0, 65536, 720911, 0, 11, 720916, 0, 65541, 851955, 0, 65537, 851956, 0, 4, 851957, 0, 196619, 851958, 0, 196619, 851959, 0, 196619, 851960, 0, 196619, 851961, 0, 131074, 851967, 0, 131077, 786435, 0, 1, 786436, 0, 65536, 786437, 0, 65536, 786438, 0, 65540, 786439, 0, 3, 786440, 0, 65538, 786444, 0, 65537, 786445, 0, 4, 786446, 0, 3, 786447, 0, 65538, 786452, 0, 65541, 917492, 0, 131073, 917493, 0, 196619, 917494, 0, 196619, 917495, 0, 196619, 917496, 0, 196619, 917497, 0, 65539, 917498, 0, 65536, 917499, 0, 2, 851971, 0, 131073, 851972, 0, 196619, 851973, 0, 3, 851974, 0, 131072, 851975, 0, 65538, 851981, 0, 65537, 851982, 0, 65538, 851988, 0, 65541, 983028, 0, 65537, 983029, 0, 4, 983030, 0, 196619, 983031, 0, 3, 983032, 0, 131072, 983033, 0, 4, 983034, 0, 196619, 983035, 0, 65539, 983036, 0, 65536, 983037, 0, 2, 917504, 0, 196608, 917505, 0, 196609, 917506, 0, 196609, 917507, 0, 65544, 917508, 0, 131072, 917509, 0, 65538, 917524, 0, 65541, 1048565, 0, 131073, 1048566, 0, 3, 1048567, 0, 65538, 1048569, 0, 131073, 1048570, 0, 196619, 1048571, 0, 196619, 1048572, 0, 196619, 1048573, 0, 131074, 983060, 0, 65541, 1114101, 0, 65537, 1114102, 0, 65538, 1114105, 0, 131073, 1114106, 0, 196619, 1114107, 0, 196619, 1114108, 0, 196619, 1114109, 0, 131074, 1048596, 0, 131077, 1179641, 0, 65537, 1179642, 0, 4, 1179643, 0, 196619, 1179644, 0, 3, 1179645, 0, 65538, 1245178, 0, 65537, 1245179, 0, 131072, 1245180, 0, 65545, 1179668, 0, 5, 1310716, 0, 131077, 1245204, 0, 131077 )
+
+[node name="WorldComplete" parent="." instance=ExtResource( 4 )]
+position = Vector2( 1600.52, 229.333 )
+world_scene = "res://World 4.tscn"
+
+[node name="Ennemies" type="Node2D" parent="."]
+
+[node name="FloaterPath" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 160, 0 )
+curve = SubResource( 1 )
+
+[node name="FloaterPath3" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 32, 256 )
+curve = SubResource( 2 )
+speed = 50
+
+[node name="FloaterPath2" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( -96, 192 )
+curve = SubResource( 3 )
+speed = 50
+
+[node name="FloaterPath4" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( -32, 384 )
+curve = SubResource( 3 )
+speed = 50
+
+[node name="FloaterPath5" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 416, 544 )
+curve = SubResource( 4 )
+
+[node name="FloaterPath6" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 576, 320 )
+curve = SubResource( 5 )
+
+[node name="FloaterPath7" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( -128, 832 )
+curve = SubResource( 6 )
+
+[node name="FloaterPath8" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 1600.52, 229.333 )
+curve = SubResource( 7 )
+speed = -100
+
+[node name="Follow" parent="Ennemies/FloaterPath8" index="0"]
+position = Vector2( -160, 0 )
+
+[node name="FloaterPath9" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 1600.52, 229.333 )
+curve = SubResource( 7 )
+speed = -100
+
+[node name="Follow" parent="Ennemies/FloaterPath9" index="0"]
+position = Vector2( 160.561, -17.6609 )
+offset = 460.667
+
+[node name="FloaterPath11" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 1600.52, 229.333 )
+curve = SubResource( 7 )
+speed = -100
+
+[node name="Follow" parent="Ennemies/FloaterPath11" index="0"]
+position = Vector2( -7.99423, -133.135 )
+offset = 230.334
+
+[node name="FloaterPath12" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 1600.52, 229.333 )
+curve = SubResource( 7 )
+speed = -100
+
+[node name="Follow" parent="Ennemies/FloaterPath12" index="0"]
+position = Vector2( 10.5176, 128.167 )
+offset = 691.001
+
+[node name="FloaterPath10" parent="Ennemies" instance=ExtResource( 2 )]
+position = Vector2( 976, 192 )
+curve = SubResource( 8 )
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( -224, 96 )
+
+[node name="Coin2" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( -96, 256 )
+
+[node name="Coin3" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( -352, 800 )
+
+[node name="Coin4" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2144, 160 )
+
+[node name="Coin5" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2080, 160 )
+
+[node name="Coin6" parent="Coins" instance=ExtResource( 5 )]
+position = Vector2( 2112, 112 )
+
+[node name="DeathBarriers" type="Node2D" parent="."]
+
+[node name="DeathBarrier" parent="DeathBarriers" instance=ExtResource( 6 )]
+position = Vector2( 0, -10 )
+
+[node name="CollisionPolygon2D" parent="DeathBarriers/DeathBarrier" index="0"]
+position = Vector2( 224, 1418 )
+polygon = PackedVector2Array( -688, -48, 2976, -48, 2976, 16, -688, 32 )
+
+[connection signal="body_entered" from="DeathBarriers/DeathBarrier" to="Player" method="_on_DeathBarrier_body_entered"]
+
+[editable path="Ennemies/FloaterPath8"]
+[editable path="Ennemies/FloaterPath9"]
+[editable path="Ennemies/FloaterPath11"]
+[editable path="Ennemies/FloaterPath12"]
+[editable path="DeathBarriers/DeathBarrier"]

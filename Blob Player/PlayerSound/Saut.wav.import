@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b23rg1cbupwfe"
+path="res://.godot/imported/Saut.wav-23dfac37a5b7441f9d81327ac3f3e752.sample"
+
+[deps]
+
+source_file="res://Blob Player/PlayerSound/Saut.wav"
+dest_files=["res://.godot/imported/Saut.wav-23dfac37a5b7441f9d81327ac3f3e752.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

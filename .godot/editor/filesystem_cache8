@@ -1,0 +1,131 @@
+2a60927148abd1d33b818b535e306557
+::res://::1686211615
+DeathBarrier.tscn::PackedScene::-1::1680599398::0::1::::<><>::
+default_env.tres::Environment::-1::1680599398::0::1::::<><>::
+DirtAutoTile.tres::TileSet::-1::1680599398::0::1::::<><>::res://Sprites 2d platformer tuto/Tiles/DirtAutoTile.png
+DirtAutoTile.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Sprites 2d platformer tuto/Tiles/DirtAutoTile.png
+Floater Enemy.gd::GDScript::-1::1681976255::0::1::::Enemy<>CharacterBody2D<>::
+Floater Enemy.tscn::PackedScene::6572868449114547970::1683013681::0::1::::<><>::uid://fcqfqwh1i2q8<>uid://eamur78eunb5<>uid://5plesxpn3n4p<>uid://bjstguqdlmepo<>uid://bqaq4qseqd4vr<>uid://1g641tf04il<>res://Floater Enemy.gd
+FloaterPath.gd::GDScript::-1::1686057572::0::1::::<>Path2D<>::
+FloaterPath.tscn::PackedScene::1548999931359263930::1686058028::0::1::::<><>::uid://c0v7ghusywjsk<>res://FloaterPath.gd
+icon.png::CompressedTexture2D::3914098068651844469::1625400018::1680599404::1::::<><>::
+Plateforme.gd::GDScript::-1::1680599398::0::1::::<>Path2D<>::
+Plateforme.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Plateformes/Plateforme mouvante.png<>res://Plateforme.gd
+Player.gd::GDScript::-1::1686067894::0::1::::<>CharacterBody2D<>::
+Player.tscn::PackedScene::5491981500815600767::1686068416::0::1::::<><>::uid://ycqkvefkrttd<>res://Player.gd<>uid://g4lrrp440fir<>uid://bvsmiw8xqfdve<>uid://cdhq8v0k7d21y<>uid://ca7gx0kl7m3vs<>uid://cplo44o2fgka8<>res://Effects/ScreenShake.tscn<>uid://ccqbqs2f0fmwo<>uid://d1fh1p02dxx4j<>uid://bx22y8vk6hhfo<>uid://b33f48lw2tuup<>uid://cuuv03i35vs1n<>uid://u8phc0isenkx<>uid://bk4ubh8r2fyxg<>uid://dd7xs18xaskjp<>uid://b1b31elbwtqkb<>uid://ctep3jhg88e71<>uid://b23rg1cbupwfe
+ScreenShake.gd::GDScript::-1::1680599398::0::1::::<>Node<>::
+StartMenu.gd::GDScript::-1::1686061985::0::1::::<>Control<>::
+StartMenu.tscn::PackedScene::3793616081808133765::1686068416::0::1::::<><>::res://StartMenu.gd
+Terrain V3 Background.png::CompressedTexture2D::4955933989603457644::1684491570::1684491571::1::::<><>::
+Test World.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://DirtAutoTile.tres<>res://FloaterPath.tscn<>res://Player.tscn<>res://Plateforme.tscn<>res://DeathBarrier.tscn<>res://Objets/DestroyableWall Sprite2D Sheet/Destructible Wall.tscn<>res://Objets/ElectricTrap.tscn
+World 1.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://WorldComplete.tscn<>res://TileMaps/CustomDirtAutoTile.tres<>res://Player.tscn<>res://FloaterPath.tscn<>res://Objets/Coin.tscn<>res://DeathBarrier.tscn<>res://Plateforme.tscn
+World 2.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://TileMaps/CustomDirtAutoTile.tres<>res://Player.tscn<>res://WorldComplete.tscn<>res://FloaterPath.tscn<>res://Objets/Coin.tscn<>res://DeathBarrier.tscn<>res://icon.png
+World 3.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://TileMaps/CustomDirtAutoTile.tres<>res://FloaterPath.tscn<>res://Player.tscn<>res://WorldComplete.tscn<>res://Objets/Coin.tscn<>res://DeathBarrier.tscn
+World 4.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Plateforme.tscn<>res://WorldComplete.tscn<>res://Player.tscn<>res://TileMaps/CustomDirtAutoTile.tres<>res://DeathBarrier.tscn<>res://Objets/Coin.tscn<>res://FloaterPath.tscn
+World 5.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Player.tscn<>res://WorldComplete.tscn<>res://TileMaps/CustomDirtAutoTile.tres<>res://Zones/GravityZone.tscn<>res://FloaterPath.tscn<>res://Objets/Coin.tscn<>res://Objets/ElectricTrap.tscn<>res://DeathBarrier.tscn
+WorldComplete.gd::GDScript::-1::1680599398::0::1::::<>Area2D<>::
+WorldComplete.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://WorldComplete.gd<>res://icon.png
+::res://Blob Player/::1686211627
+EndOfLevel.png::CompressedTexture2D::4367787241463831606::1686211584::1686211631::1::::<><>::
+::res://Blob Player/BackgroundElements/::1685718553
+JumpingBallz-MainBackground.png::CompressedTexture2D::6219226981249131857::1685718516::1685718553::1::::<><>::
+JumpingBallz-MovingBackground1.png::CompressedTexture2D::3149392620041097644::1685718053::1685718135::1::::<><>::
+::res://Blob Player/GUI/::1686068416
+GUI.gd::GDScript::-1::1682697031::0::1::::<>CanvasLayer<>::
+GUI.tscn::PackedScene::4409868006958590159::1686068416::0::1::::<><>::uid://dpmp788mwo7ce<>uid://b3g20inrlob7h<>res://Blob Player/GUI/GUI.gd
+::res://Blob Player/Health/::1680599404
+HealthBarOverLayer.png::CompressedTexture2D::8237836923819272152::1666284074::1680599404::1::::<><>::
+HealthBarOverUnder.png::CompressedTexture2D::4365779016791596363::1666284087::1680599404::1::::<><>::
+::res://Blob Player/Movements/::1680599405
+Dash.png::CompressedTexture2D::1472824738147972255::1668440813::1680599404::1::::<><>::
+Fall.png::CompressedTexture2D::1689651442055011101::1662539386::1680599404::1::::<><>::
+Idle0.png::CompressedTexture2D::4839308159807381260::1662487318::1680599404::1::::<><>::
+Idle1.png::CompressedTexture2D::5849285549211419433::1662487346::1680599404::1::::<><>::
+Idle2.png::CompressedTexture2D::4058186270793383420::1662487360::1680599404::1::::<><>::
+Idle3.png::CompressedTexture2D::481699179539130541::1662487380::1680599404::1::::<><>::
+Jump.png::CompressedTexture2D::4946339375813286594::1662538390::1680599405::1::::<><>::
+Run1.png::CompressedTexture2D::8994966151731396167::1662488919::1680599405::1::::<><>::
+Run2.png::CompressedTexture2D::4998890087769573136::1662488932::1680599405::1::::<><>::
+Run3.png::CompressedTexture2D::3898289297488139554::1662488946::1680599405::1::::<><>::
+::res://Blob Player/PlayerSound/::1682068676
+Atterissage.wav::AudioStreamWAV::7437318722878613529::1681395566::1681995683::1::::<><>::
+Dash.wav::AudioStreamWAV::4215141729636840685::1681395713::1682001950::1::::<><>::
+Marche.wav::AudioStreamWAV::6115648148487687170::1681395948::1681995683::1::::<><>::
+Saut.wav::AudioStreamWAV::4340366311443598302::1681395437::1681995683::1::::<><>::
+WoodPlatform.png::CompressedTexture2D::7157510580045628935::1682068676::1682068676::1::::<><>::
+::res://Effects/::1662544059
+ScreenShake.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://ScreenShake.gd
+::res://Floater/::1680599405
+pixil-frame-0.png::CompressedTexture2D::2137306987198743277::1658908328::1680599405::1::::<><>::
+pixil-frame-1.png::CompressedTexture2D::281520638179634292::1658908328::1680599405::1::::<><>::
+pixil-frame-2.png::CompressedTexture2D::3510466310192481639::1658908328::1680599405::1::::<><>::
+pixil-frame-3.png::CompressedTexture2D::356054249264507757::1658908328::1680599405::1::::<><>::
+pixil-frame-4.png::CompressedTexture2D::3056444488969816972::1658908328::1680599405::1::::<><>::
+pixil-frame-5.png::CompressedTexture2D::54095047386244871::1658908328::1680599405::1::::<><>::
+::res://Levels/::1647871712
+::res://Levels/Level 1/::1686068416
+Level 1.tscn::PackedScene::7619160595511538368::1686068416::0::1::::<><>::uid://cnnsfvqmrqith<>uid://ckimerwxac6tn<>uid://cj3rygh50f571<>res://DeathBarrier.tscn<>uid://ud1x4k8lm7mt<>uid://wcl2j0y3lgcg<>uid://bcnctdajkaogh<>res://Objets/Coin.tscn<>uid://5plesxpn3n4p<>uid://eamur78eunb5<>uid://bqaq4qseqd4vr<>uid://fcqfqwh1i2q8<>uid://bjstguqdlmepo<>uid://1g641tf04il<>uid://c5om58jl2xnrm<>uid://c0v7ghusywjsk<>uid://c6m28n66ryhnb
+::res://Objets/::1686068416
+Coin V2.png::CompressedTexture2D::8730075472816530504::1661949280::1680599405::1::::<><>::
+Coin.gd::GDScript::-1::1686061774::0::1::::<>Area2D<>::
+Coin.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Objets/Coin V2.png<>res://Objets/Coin.gd
+ElectricTrap.png::CompressedTexture2D::8800205587111155536::1635169273::1680599404::1::::<><>::
+ElectricTrap.tscn::PackedScene::6908191890524939786::1686068416::0::1::::<><>::uid://dxm5dn6667jeu<>uid://cw8f1cmhkik7r
+::res://Objets/DestroyableWall Sprite Sheet/::1683123721
+DestroyableWallV2.png::CompressedTexture2D::1111706250914618625::1683123595::1683123676::1::::<><>::
+::res://Objets/FallingTree/::1680599405
+FallingTree.gd::GDScript::-1::1680599399::0::1::::<>Node2D<>::
+FallingTree.tscn::PackedScene::-1::1680599399::0::1::::<><>::res://Objets/FallingTree/FallingTree.gd<>res://Objets/FallingTree/Trunk.png<>res://Objets/FallingTree/stump.png
+stump.png::CompressedTexture2D::9111108809037313599::1658736847::1680599405::1::::<><>::
+Trunk.png::CompressedTexture2D::3889329821231842634::1658736895::1680599405::1::::<><>::
+::res://Particles/::1683013408
+ElectricTrapParticles.png::CompressedTexture2D::6385470532828338489::1683012329::1683013408::1::::<><>::
+::res://Plateformes/::1680599404
+Planche.png::CompressedTexture2D::8156571818240280395::1668536073::1680599404::1::::<><>::
+Plateforme Collante.png::CompressedTexture2D::3111740752201293931::1633529151::1680599404::1::::<><>::
+Plateforme mouvante.png::CompressedTexture2D::7017223904380700021::1627466447::1680599404::1::::<><>::
+::res://Scripts/::1626684743
+::res://Spiker/::1686068416
+Initial.png::CompressedTexture2D::6181732485813982924::1685973238::1685980631::1::::<><>::
+left1.png::CompressedTexture2D::1502054377932036795::1685973238::1685980631::1::::<><>::
+left2.png::CompressedTexture2D::264705386567746416::1685973238::1685980631::1::::<><>::
+left3.png::CompressedTexture2D::8770037157667785599::1685973238::1685980631::1::::<><>::
+left4.png::CompressedTexture2D::2814813775816396625::1685973238::1685980631::1::::<><>::
+right1.png::CompressedTexture2D::8111250247342039421::1685973238::1685980631::1::::<><>::
+right2.png::CompressedTexture2D::7713067957774398320::1685973238::1685980631::1::::<><>::
+right3.png::CompressedTexture2D::259858864083592402::1685973238::1685980631::1::::<><>::
+right4.png::CompressedTexture2D::1471221033567333646::1685973238::1685980631::1::::<><>::
+SpikerEnemy.gd::GDScript::-1::1685981042::0::1::::<>CharacterBody2D<>::
+SpikerEnemy.tscn::PackedScene::7320063854075049300::1686068416::0::1::::<><>::uid://cucqh35p3nraa<>res://Spiker/SpikerEnemy.gd<>uid://vnuu7jhvpgq2<>uid://d1hwn4awn2sy<>uid://dw7jh3wgndr5x<>uid://bgdrto2w1tgab<>uid://dntfdvec1lmav<>uid://dh5jdqlulpl4c<>uid://dx43qgdu23oo<>uid://u7w2btltq57g
+spiker_path.gd::GDScript::-1::1686068416::0::1::::<>Path2D<>::
+spiker_path.tscn::PackedScene::6975167075342135879::1686060341::0::1::::<><>::uid://dcj5m83cfq10k<>res://Spiker/spiker_path.gd
+::res://Sprites 2d platformer tuto/::1680599404
+Sky.png::CompressedTexture2D::854458533784212058::1496835902::1680599404::1::::<><>::
+::res://Sprites 2d platformer tuto/Player/::1680599404
+Idle0.png::CompressedTexture2D::9187946762208331377::1517988136::1680599404::1::::<><>::
+Jump0.png::CompressedTexture2D::1251474380997389584::1517993382::1680599404::1::::<><>::
+Jump1.png::CompressedTexture2D::8468826751600045331::1517993390::1680599404::1::::<><>::
+Jump3.png::CompressedTexture2D::5278698121113629851::1517993396::1680599404::1::::<><>::
+Jump4.png::CompressedTexture2D::7261685742058122295::1517993404::1680599404::1::::<><>::
+Run0.png::CompressedTexture2D::1453746051615754011::1517993306::1680599404::1::::<><>::
+Run1.png::CompressedTexture2D::5234947398008895792::1517993314::1680599404::1::::<><>::
+Run2.png::CompressedTexture2D::4995088424651333967::1517993320::1680599404::1::::<><>::
+Run3.png::CompressedTexture2D::7231128675625650634::1517993328::1680599404::1::::<><>::
+Run4.png::CompressedTexture2D::5124341543496419214::1517993348::1680599404::1::::<><>::
+Run7.png::CompressedTexture2D::2079904180305900571::1517993358::1680599404::1::::<><>::
+::res://Sprites 2d platformer tuto/Tiles/::1680599404
+DirtAutoTile.png::CompressedTexture2D::2176961471254001019::1519482568::1680599404::1::::<><>::
+JungleDirtTileSet.png::CompressedTexture2D::8102662777420850429::1517992388::1680599404::1::::<><>::
+::res://Terrains/::1684491610
+RobotTerrain.png::CompressedTexture2D::1411591261234343771::1683023819::1683023978::1::::<><>::
+Terrain V3 Background.png::CompressedTexture2D::2553790803834017867::1684491531::1684491610::1::::<><>::
+Terrain V3.png::CompressedTexture2D::5713236208598526269::1673331403::1681980071::1::::<><>::
+WoodPlatform.png::CompressedTexture2D::5463418912523349898::1682068876::1682068893::1::::<><>::
+::res://TileMaps/::1680599405
+CustomDirtAutoTile.tres::TileSet::-1::1680599399::0::1::::<><>::res://TileMaps/CustomDirtTileMap.png<>res://TileMaps/CustomDirtTileMapVariant1.png
+CustomDirtAutoTile.tscn::PackedScene::-1::1680599399::0::1::::<><>::res://TileMaps/CustomDirtTileMap.png
+CustomDirtTileMap.png::CompressedTexture2D::4766209920469452784::1632041230::1680599405::1::::<><>::
+CustomDirtTileMapVariant1.png::CompressedTexture2D::3004129627648260215::1632116726::1680599404::1::::<><>::
+::res://Zones/::1680599404
+GravityZone.tscn::PackedScene::-1::1680599398::0::1::::<><>::
+LowGravSprite.png::CompressedTexture2D::6179986158811998998::1636207108::1680599404::1::::<><>::

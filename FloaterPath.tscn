@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://wcl2j0y3lgcg"]
+
+[ext_resource type="PackedScene" uid="uid://c0v7ghusywjsk" path="res://Floater Enemy.tscn" id="1"]
+[ext_resource type="Script" path="res://FloaterPath.gd" id="2"]
+
+[sub_resource type="Curve2D" id="1"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(1.25992, 65.5159, -1.25992, -65.5159, 0, 32)
+}
+point_count = 1
+
+[node name="FloaterPath" type="Path2D"]
+curve = SubResource("1")
+script = ExtResource("2")
+
+[node name="Follow" type="PathFollow2D" parent="."]
+position = Vector2(-10, 15)
+rotates = false
+cubic_interp = false
+
+[node name="Floater" parent="Follow" instance=ExtResource("1")]

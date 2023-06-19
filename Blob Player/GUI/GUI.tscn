@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://b33f48lw2tuup"]
+
+[ext_resource type="Texture2D" uid="uid://dpmp788mwo7ce" path="res://Blob Player/Health/HealthBarOverLayer.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://b3g20inrlob7h" path="res://Blob Player/Health/HealthBarOverUnder.png" id="2"]
+[ext_resource type="Script" path="res://Blob Player/GUI/GUI.gd" id="3"]
+
+[node name="GUI" type="CanvasLayer"]
+offset = Vector2(0, 120)
+transform = Transform2D(1, 0, 0, 1, 0, 120)
+script = ExtResource("3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 640.0
+offset_bottom = 368.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="HealthBar" type="TextureProgressBar" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+max_value = 2.0
+value = 2.0
+fill_mode = 3
+texture_over = ExtResource("1")
+texture_progress = ExtResource("2")

@@ -1,0 +1,9 @@
+[gd_scene format=2]
+
+[node name="DeathBarrier" type="Area2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array( -12.5908, -11.4656, 6.32941, -11.4656, 5.90895, 7.87507, -14.2726, 6.61372 )

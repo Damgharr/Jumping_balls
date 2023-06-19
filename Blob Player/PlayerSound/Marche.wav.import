@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ctep3jhg88e71"
+path="res://.godot/imported/Marche.wav-21c8ba488df994c4b49bb6e542e6eff8.sample"
+
+[deps]
+
+source_file="res://Blob Player/PlayerSound/Marche.wav"
+dest_files=["res://.godot/imported/Marche.wav-21c8ba488df994c4b49bb6e542e6eff8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

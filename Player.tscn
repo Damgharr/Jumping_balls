@@ -1,0 +1,199 @@
+[gd_scene load_steps=25 format=3 uid="uid://ckimerwxac6tn"]
+
+[ext_resource type="Texture2D" uid="uid://ycqkvefkrttd" path="res://Blob Player/Movements/Fall.png" id="1"]
+[ext_resource type="Script" path="res://Player.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://g4lrrp440fir" path="res://Blob Player/Movements/Idle3.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bvsmiw8xqfdve" path="res://Blob Player/Movements/Run3.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://cdhq8v0k7d21y" path="res://Blob Player/Movements/Run2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ca7gx0kl7m3vs" path="res://Blob Player/Movements/Idle0.png" id="6"]
+[ext_resource type="Texture2D" uid="uid://cplo44o2fgka8" path="res://Blob Player/Movements/Idle1.png" id="7"]
+[ext_resource type="PackedScene" path="res://Effects/ScreenShake.tscn" id="8"]
+[ext_resource type="Texture2D" uid="uid://ccqbqs2f0fmwo" path="res://Blob Player/Movements/Jump.png" id="9"]
+[ext_resource type="Texture2D" uid="uid://d1fh1p02dxx4j" path="res://Blob Player/Movements/Run1.png" id="10"]
+[ext_resource type="Texture2D" uid="uid://bx22y8vk6hhfo" path="res://Blob Player/Movements/Idle2.png" id="12"]
+[ext_resource type="PackedScene" uid="uid://b33f48lw2tuup" path="res://Blob Player/GUI/GUI.tscn" id="13"]
+[ext_resource type="Texture2D" uid="uid://cuuv03i35vs1n" path="res://Blob Player/BackgroundElements/JumpingBallz-MainBackground.png" id="13_pylk8"]
+[ext_resource type="Texture2D" uid="uid://u8phc0isenkx" path="res://Blob Player/Movements/Dash.png" id="14"]
+[ext_resource type="Texture2D" uid="uid://bk4ubh8r2fyxg" path="res://Blob Player/BackgroundElements/JumpingBallz-MovingBackground1.png" id="14_vovml"]
+[ext_resource type="AudioStream" uid="uid://dd7xs18xaskjp" path="res://Blob Player/PlayerSound/Atterissage.wav" id="15_bopku"]
+[ext_resource type="AudioStream" uid="uid://b1b31elbwtqkb" path="res://Blob Player/PlayerSound/Dash.wav" id="16_1makj"]
+[ext_resource type="AudioStream" uid="uid://ctep3jhg88e71" path="res://Blob Player/PlayerSound/Marche.wav" id="17_up4gw"]
+[ext_resource type="AudioStream" uid="uid://b23rg1cbupwfe" path="res://Blob Player/PlayerSound/Saut.wav" id="18_77cnm"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("14")
+}],
+"loop": true,
+"name": &"Dash",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1")
+}],
+"loop": true,
+"name": &"Fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 10.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="2"]
+
+[sub_resource type="Animation" id="3"]
+length = 0.001
+step = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="4"]
+resource_name = "invulnerability"
+length = 0.15
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.07),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x5g0y"]
+_data = {
+"RESET": SubResource("3"),
+"invulnerability": SubResource("4")
+}
+
+[node name="Player" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("2")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("1")
+animation = &"Run"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 4)
+rotation = 1.5708
+shape = SubResource("2")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+position_smoothing_enabled = true
+
+[node name="ScreenShake" parent="Camera2D" instance=ExtResource("8")]
+
+[node name="ParallaxBackground-Main" type="ParallaxBackground" parent="."]
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground-Main"]
+motion_scale = Vector2(0, 0)
+
+[node name="MainBackground" type="Sprite2D" parent="ParallaxBackground-Main/ParallaxLayer"]
+position = Vector2(-24, -3)
+scale = Vector2(0.630556, 0.630556)
+texture = ExtResource("13_pylk8")
+centered = false
+
+[node name="ParallaxBackground-Moving1" type="ParallaxBackground" parent="."]
+scroll_base_scale = Vector2(1, 0)
+scroll_ignore_camera_zoom = true
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground-Moving1"]
+motion_scale = Vector2(0.5, 0)
+motion_mirroring = Vector2(1080, 0)
+
+[node name="MovingBackground1" type="Sprite2D" parent="ParallaxBackground-Moving1/ParallaxLayer"]
+position = Vector2(-24, -3)
+scale = Vector2(0.630556, 0.630556)
+texture = ExtResource("14_vovml")
+centered = false
+
+[node name="Invulnerability timer" type="Timer" parent="."]
+wait_time = 0.8
+one_shot = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_x5g0y")
+}
+
+[node name="GUI" parent="." instance=ExtResource("13")]
+
+[node name="Atterissage" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_bopku")
+
+[node name="Dash" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_1makj")
+pitch_scale = 0.39
+
+[node name="Marche" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_up4gw")
+
+[node name="Saut" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("18_77cnm")
+
+[connection signal="DamageTaken" from="." to="GUI" method="_on_player_damage_taken"]
+[connection signal="timeout" from="Invulnerability timer" to="." method="_on_Invulnerability_timer_timeout"]
+[connection signal="restart" from="GUI" to="." method="_on_GUI_restart"]

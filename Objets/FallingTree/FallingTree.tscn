@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Objets/FallingTree/FallingTree.gd" type="Script" id=1]
+[ext_resource path="res://Objets/FallingTree/Trunk.png" type="Texture2D" id=2]
+[ext_resource path="res://Objets/FallingTree/stump.png" type="Texture2D" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+size = Vector2( 27, 128 )
+
+[node name="FallingTree" type="Node2D" groups=["interactible"]]
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Stump" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Stump"]
+scale = Vector2( 5, 5 )
+polygon = PackedVector2Array( 18.36, 45.9355, 20.6908, 52.865, 23.9666, 56.9598, 0.532071, 56.8338, 4.8, 52.8, 6.3907, 45.9985 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Stump/CollisionPolygon2D"]
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Trunk" type="CharacterBody2D" parent="."]
+position = Vector2( 0, -4 )
+
+[node name="Sprite2D" type="Sprite2D" parent="Trunk"]
+position = Vector2( -12, -32 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="CollisionTree" type="CollisionShape2D" parent="Trunk"]
+position = Vector2( 63, 125 )
+shape = SubResource( 1 )

@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://DirtAutoTile.tres" type="TileSet" id=1]
+[ext_resource path="res://FloaterPath.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Plateforme.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DeathBarrier.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Objets/DestroyableWall Sprite2D Sheet/Destructible Wall.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Objets/ElectricTrap.tscn" type="PackedScene" id=7]
+
+[sub_resource type="Curve2D" id=1]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 576, 96, 0, 0, 0, 0, 1008, 96, 0, 0, 0, 0, 1008, 96, 0, 0, 0, 0, 576, 96 )
+}
+
+[sub_resource type="Curve2D" id=2]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 64, 96, 0, 0, 0, 0, 288, 96, 0, 0, 0, 0, 64, 96 )
+}
+
+[node name="Test World" type="Node2D"]
+
+[node name="Plateforme" parent="." instance=ExtResource( 4 )]
+position = Vector2( 0, -64 )
+curve = SubResource( 1 )
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+CHANGEGRAVITY = 1
+world_scene = "res://Test World.tscn"
+
+[node name="Destructible Wall" parent="." instance=ExtResource( 6 )]
+tile_data = PackedInt32Array( 65512, 0, 0, 65519, 0, 0, 131048, 0, 0, 131055, 0, 0, 196584, 0, 0, 196591, 0, 0 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PackedInt32Array( -65540, 0, 196608, -65539, 0, 196609, -65538, 0, 196609, -65537, 0, 196610, 65551, 0, 5, 196592, 0, 196608, 196593, 0, 196609, 196594, 0, 196609, 196595, 0, 196609, 196596, 0, 196609, 196597, 0, 196609, 196598, 0, 196609, 196599, 0, 196609, 196600, 0, 10, 196601, 0, 9, 196602, 0, 196609, 196603, 0, 196609, 196604, 0, 196609, 196605, 0, 196609, 196606, 0, 196609, 196607, 0, 196609, 131072, 0, 7, 131077, 0, 6, 131078, 0, 196609, 131079, 0, 196609, 131080, 0, 196609, 131081, 0, 196609, 131082, 0, 196609, 131083, 0, 196609, 131084, 0, 196609, 131085, 0, 196609, 131086, 0, 196609, 131087, 0, 65543, 262136, 0, 65537, 262137, 0, 65545, 196608, 0, 65541, 196611, 0, 6, 196612, 0, 196609, 196613, 0, 65543, 327673, 0, 65541, 262144, 0, 65541, 262147, 0, 65541, 393209, 0, 65542, 393210, 0, 7, 327680, 0, 65541, 327683, 0, 65541, 458746, 0, 65541, 393216, 0, 131077, 393219, 0, 8, 393220, 0, 65536, 393221, 0, 65536, 393222, 0, 65536, 393223, 0, 65536, 393224, 0, 65536, 393225, 0, 65536, 393226, 0, 2, 524282, 0, 65542, 524283, 0, 7, 458755, 0, 65537, 458756, 0, 131072, 458757, 0, 131072, 458758, 0, 131072, 458759, 0, 131072, 458760, 0, 131072, 458761, 0, 131072, 458762, 0, 65547, 458763, 0, 196609, 458764, 0, 7, 589819, 0, 65541, 524300, 0, 65541, 655355, 0, 65542, 655356, 0, 7, 589836, 0, 65541, 720892, 0, 65541, 655372, 0, 65541, 786428, 0, 65542, 786429, 0, 196609, 786430, 0, 196609, 786431, 0, 196609, 720896, 0, 196609, 720897, 0, 196609, 720898, 0, 196609, 720899, 0, 196609, 720900, 0, 196609, 720901, 0, 196609, 720902, 0, 196609, 720903, 0, 196609, 720904, 0, 196609, 720905, 0, 196609, 720906, 0, 196609, 720907, 0, 196609, 720908, 0, 65543 )
+
+[node name="FloaterPath" parent="." instance=ExtResource( 2 )]
+position = Vector2( 64, 0 )
+curve = SubResource( 2 )
+speed = 50
+
+[node name="DeathBarrier" parent="." instance=ExtResource( 5 )]
+position = Vector2( -448, 128 )
+
+[node name="CollisionPolygon2D" parent="DeathBarrier" index="0"]
+position = Vector2( -128, 2112 )
+build_mode = 1
+polygon = PackedVector2Array( -2464, -384, 5056, -288, 160, 128, -32, 128 )
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="ElectricTrap" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -224, -64 )
+rotation = 3.14159
+
+[node name="ElectricTrap2" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -160, -64 )
+rotation = 3.14159
+
+[node name="ElectricTrap3" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -96, -64 )
+rotation = 3.14159
+
+[node name="ElectricTrap4" parent="Node2D" instance=ExtResource( 7 )]
+position = Vector2( -32, -64 )
+rotation = 3.14159
+
+[connection signal="body_entered" from="DeathBarrier" to="Player" method="_on_DeathBarrier_body_entered"]
+[connection signal="body_entered" from="Node2D/ElectricTrap" to="Player" method="_on_ElectricTrap_body_entered"]
+[connection signal="body_entered" from="Node2D/ElectricTrap2" to="Player" method="_on_ElectricTrap_body_entered"]
+[connection signal="body_entered" from="Node2D/ElectricTrap3" to="Player" method="_on_ElectricTrap_body_entered"]
+[connection signal="body_entered" from="Node2D/ElectricTrap4" to="Player" method="_on_ElectricTrap_body_entered"]
+
+[editable path="DeathBarrier"]

@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="GravityZone" type="Area2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+region_enabled = true
+
+[connection signal="body_entered" from="." to="." method="_on_GravityZone_body_entered"]

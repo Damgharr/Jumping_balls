@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Plateformes/Plateforme mouvante.png" type="Texture2D" id=1]
+[ext_resource path="res://Plateforme.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array( 0, 0, 0, 0, 576, 96, 0, 0, 0, 0, 1008, 96, 0, 0, 0, 0, 1008, 96, 0, 0, 0, 0, 576, 96 )
+}
+
+[sub_resource type="RectangleShape2D" id=2]
+size = Vector2( 96, 10 )
+
+[node name="Plateforme" type="Path2D"]
+position = Vector2( 0, 64 )
+curve = SubResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Circuit" type="PathFollow2D" parent="."]
+position = Vector2( 576, 96 )
+rotation = 3.88301e-06
+rotate = false
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="Circuit"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Circuit/CharacterBody2D"]
+position = Vector2( 0, -10 )
+scale = Vector2( 3, 3 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Circuit/CharacterBody2D"]
+scale = Vector2( 1, 3 )
+shape = SubResource( 2 )
+one_way_collision = true

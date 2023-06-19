@@ -1,0 +1,61 @@
+[gd_scene load_steps=11 format=3 uid="uid://c0v7ghusywjsk"]
+
+[ext_resource type="Texture2D" uid="uid://fcqfqwh1i2q8" path="res://Floater/pixil-frame-3.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://eamur78eunb5" path="res://Floater/pixil-frame-1.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://5plesxpn3n4p" path="res://Floater/pixil-frame-0.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://bjstguqdlmepo" path="res://Floater/pixil-frame-4.png" id="4"]
+[ext_resource type="Texture2D" uid="uid://bqaq4qseqd4vr" path="res://Floater/pixil-frame-2.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://1g641tf04il" path="res://Floater/pixil-frame-5.png" id="6"]
+[ext_resource type="Script" path="res://Floater Enemy.gd" id="15"]
+
+[sub_resource type="SpriteFrames" id="4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="2"]
+size = Vector2(46, 4)
+
+[sub_resource type="RectangleShape2D" id="3"]
+size = Vector2(12, 26)
+
+[node name="Floater" type="CharacterBody2D"]
+script = ExtResource("15")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+sprite_frames = SubResource("4")
+animation = &"Idle"
+speed_scale = 2.0
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(32, 15)
+shape = SubResource("2")
+
+[node name="DamageArea" type="Area2D" parent="."]
+
+[node name="DamageCollision" type="CollisionShape2D" parent="DamageArea"]
+position = Vector2(32, 40)
+shape = SubResource("3")

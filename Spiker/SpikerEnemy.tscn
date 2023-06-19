@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://dcj5m83cfq10k"]
+
+[ext_resource type="Texture2D" uid="uid://cucqh35p3nraa" path="res://Spiker/Initial.png" id="1_44ykp"]
+[ext_resource type="Script" path="res://Spiker/SpikerEnemy.gd" id="1_rowx8"]
+[ext_resource type="Texture2D" uid="uid://vnuu7jhvpgq2" path="res://Spiker/left1.png" id="2_lnje0"]
+[ext_resource type="Texture2D" uid="uid://d1hwn4awn2sy" path="res://Spiker/left2.png" id="3_ixhuv"]
+[ext_resource type="Texture2D" uid="uid://dw7jh3wgndr5x" path="res://Spiker/left3.png" id="4_oc6rd"]
+[ext_resource type="Texture2D" uid="uid://bgdrto2w1tgab" path="res://Spiker/left4.png" id="5_v10fs"]
+[ext_resource type="Texture2D" uid="uid://dntfdvec1lmav" path="res://Spiker/right1.png" id="6_2vjpq"]
+[ext_resource type="Texture2D" uid="uid://dh5jdqlulpl4c" path="res://Spiker/right2.png" id="7_c47e0"]
+[ext_resource type="Texture2D" uid="uid://dx43qgdu23oo" path="res://Spiker/right3.png" id="8_t58op"]
+[ext_resource type="Texture2D" uid="uid://u7w2btltq57g" path="res://Spiker/right4.png" id="9_1s53o"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_bf382"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_44ykp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lnje0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ixhuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oc6rd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v10fs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_oc6rd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ixhuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lnje0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("1_44ykp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2vjpq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c47e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t58op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1s53o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_t58op")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_c47e0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_2vjpq")
+}],
+"loop": true,
+"name": &"Eye animation",
+"speed": 15.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_4h1mh"]
+radius = 25.0
+
+[node name="Spiker" type="CharacterBody2D"]
+script = ExtResource("1_rowx8")
+
+[node name="SpikerAnim" type="AnimatedSprite2D" parent="."]
+position = Vector2(32, 32)
+sprite_frames = SubResource("SpriteFrames_bf382")
+animation = &"Eye animation"
+
+[node name="SpikerDamage" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SpikerDamage"]
+position = Vector2(32, 32)
+shape = SubResource("CircleShape2D_4h1mh")
