@@ -1,5 +1,5 @@
 2a60927148abd1d33b818b535e306557
-::res://::1686211615
+::res://::1687357948
 DeathBarrier.tscn::PackedScene::-1::1680599398::0::1::::<><>::
 default_env.tres::Environment::-1::1680599398::0::1::::<><>::
 DirtAutoTile.tres::TileSet::-1::1680599398::0::1::::<><>::res://Sprites 2d platformer tuto/Tiles/DirtAutoTile.png
@@ -23,9 +23,9 @@ World 2.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://TileMaps/CustomDi
 World 3.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://TileMaps/CustomDirtAutoTile.tres<>res://FloaterPath.tscn<>res://Player.tscn<>res://WorldComplete.tscn<>res://Objets/Coin.tscn<>res://DeathBarrier.tscn
 World 4.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Plateforme.tscn<>res://WorldComplete.tscn<>res://Player.tscn<>res://TileMaps/CustomDirtAutoTile.tres<>res://DeathBarrier.tscn<>res://Objets/Coin.tscn<>res://FloaterPath.tscn
 World 5.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://Player.tscn<>res://WorldComplete.tscn<>res://TileMaps/CustomDirtAutoTile.tres<>res://Zones/GravityZone.tscn<>res://FloaterPath.tscn<>res://Objets/Coin.tscn<>res://Objets/ElectricTrap.tscn<>res://DeathBarrier.tscn
-WorldComplete.gd::GDScript::-1::1680599398::0::1::::<>Area2D<>::
-WorldComplete.tscn::PackedScene::-1::1680599398::0::1::::<><>::res://WorldComplete.gd<>res://icon.png
-::res://Blob Player/::1686211627
+WorldComplete.gd::GDScript::-1::1686212019::0::1::::<>Area2D<>::
+WorldComplete.tscn::PackedScene::7692814598022126009::1686212019::0::1::::<><>::res://WorldComplete.gd<>uid://b3h122j4vq255
+::res://Blob Player/::1686211631
 EndOfLevel.png::CompressedTexture2D::4367787241463831606::1686211584::1686211631::1::::<><>::
 ::res://Blob Player/BackgroundElements/::1685718553
 JumpingBallz-MainBackground.png::CompressedTexture2D::6219226981249131857::1685718516::1685718553::1::::<><>::
@@ -63,8 +63,8 @@ pixil-frame-3.png::CompressedTexture2D::356054249264507757::1658908328::16805994
 pixil-frame-4.png::CompressedTexture2D::3056444488969816972::1658908328::1680599405::1::::<><>::
 pixil-frame-5.png::CompressedTexture2D::54095047386244871::1658908328::1680599405::1::::<><>::
 ::res://Levels/::1647871712
-::res://Levels/Level 1/::1686068416
-Level 1.tscn::PackedScene::7619160595511538368::1686068416::0::1::::<><>::uid://cnnsfvqmrqith<>uid://ckimerwxac6tn<>uid://cj3rygh50f571<>res://DeathBarrier.tscn<>uid://ud1x4k8lm7mt<>uid://wcl2j0y3lgcg<>uid://bcnctdajkaogh<>res://Objets/Coin.tscn<>uid://5plesxpn3n4p<>uid://eamur78eunb5<>uid://bqaq4qseqd4vr<>uid://fcqfqwh1i2q8<>uid://bjstguqdlmepo<>uid://1g641tf04il<>uid://c5om58jl2xnrm<>uid://c0v7ghusywjsk<>uid://c6m28n66ryhnb
+::res://Levels/Level 1/::1686212097
+Level 1.tscn::PackedScene::7619160595511538368::1686212097::0::1::::<><>::uid://cnnsfvqmrqith<>uid://ckimerwxac6tn<>uid://cj3rygh50f571<>res://DeathBarrier.tscn<>uid://ud1x4k8lm7mt<>uid://wcl2j0y3lgcg<>uid://bcnctdajkaogh<>res://Objets/Coin.tscn<>uid://5plesxpn3n4p<>uid://eamur78eunb5<>uid://bqaq4qseqd4vr<>uid://fcqfqwh1i2q8<>uid://bjstguqdlmepo<>uid://1g641tf04il<>uid://c5om58jl2xnrm<>uid://c0v7ghusywjsk<>uid://c6m28n66ryhnb<>uid://dhupsdtgoyoof
 ::res://Objets/::1686068416
 Coin V2.png::CompressedTexture2D::8730075472816530504::1661949280::1680599405::1::::<><>::
 Coin.gd::GDScript::-1::1686061774::0::1::::<>Area2D<>::
