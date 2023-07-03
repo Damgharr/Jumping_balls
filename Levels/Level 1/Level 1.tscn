@@ -1799,7 +1799,7 @@ sources/1 = SubResource("TileSetAtlasSource_gtmcn")
 sources/2 = SubResource("TileSetAtlasSource_b20bj")
 sources/3 = SubResource("TileSetAtlasSource_h33eh")
 
-[sub_resource type="Curve2D" id="Curve2D_8lkwm"]
+[sub_resource type="Curve2D" id="Curve2D_2baoq"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 48, 160, 0, 0, 0, 0, 48, 96, 0, 0, 0, 0, 48, 160)
@@ -1832,146 +1832,146 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="Curve2D" id="Curve2D_lc61y"]
+[sub_resource type="Curve2D" id="Curve2D_pvkbi"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 80, 160, 0, 0, 0, 0, 80, 64, 0, 0, 0, 0, 80, 160)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_myiq0"]
+[sub_resource type="Curve2D" id="Curve2D_qsif6"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 80, 80, 0, 0, 0, 0, 80, 192, 0, 0, 0, 0, 80, 80)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_88ls5"]
+[sub_resource type="Curve2D" id="Curve2D_ocpig"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 56, 168, 0, 0, 0, 0, 56, 48, 0, 0, 0, 0, 56, 168)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_j83ih"]
+[sub_resource type="Curve2D" id="Curve2D_rud8x"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -104, 160, 0, 0, 0, 0, 184, 160, 0, 0, 0, 0, -104, 160)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_n8hu0"]
+[sub_resource type="Curve2D" id="Curve2D_xo1g4"]
 resource_local_to_scene = true
 
-[sub_resource type="Curve2D" id="Curve2D_4r4be"]
+[sub_resource type="Curve2D" id="Curve2D_sgnf0"]
 resource_local_to_scene = true
 
-[sub_resource type="Curve2D" id="Curve2D_d72g5"]
-resource_local_to_scene = true
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, 0)
-}
-point_count = 3
-
-[sub_resource type="Curve2D" id="Curve2D_3jbyf"]
+[sub_resource type="Curve2D" id="Curve2D_hpvwk"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_bvuwj"]
+[sub_resource type="Curve2D" id="Curve2D_85dv6"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_ibw1e"]
+[sub_resource type="Curve2D" id="Curve2D_ifbmy"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_oo2m4"]
+[sub_resource type="Curve2D" id="Curve2D_twnqo"]
+resource_local_to_scene = true
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, 0)
+}
+point_count = 3
+
+[sub_resource type="Curve2D" id="Curve2D_4qqf1"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_lhc5q"]
+[sub_resource type="Curve2D" id="Curve2D_dbvay"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_1mudy"]
+[sub_resource type="Curve2D" id="Curve2D_7bpfd"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_7rwny"]
+[sub_resource type="Curve2D" id="Curve2D_awt3d"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, -4, -4, 0, 0, 0, 0, -4, -324, 0, 0, 0, 0, -4, -4)
 }
 point_count = 3
 
-[sub_resource type="Curve2D" id="Curve2D_2e36w"]
+[sub_resource type="Curve2D" id="Curve2D_yeiua"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -64, 0, 0, 0, 0, -448, -64, 0, 0, 0, 0, -448, 96, 0, 0, 0, 0, 0, 96, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_j2ngm"]
+[sub_resource type="Curve2D" id="Curve2D_balkf"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -448, 0, 0, 0, 0, 0, -448, 160, 0, 0, 0, 0, 0, 160, 0, 0, 0, 0, 0, 0)
 }
 point_count = 5
 
-[sub_resource type="Curve2D" id="Curve2D_vrkfc"]
+[sub_resource type="Curve2D" id="Curve2D_14y4f"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -384, 0, 0, 0, 0, 0, -384, 160, 0, 0, 0, 0, 64, 160, 0, 0, 0, 0, 64, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_r5a31"]
+[sub_resource type="Curve2D" id="Curve2D_esml6"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -320, 0, 0, 0, 0, 0, -320, 160, 0, 0, 0, 0, 128, 160, 0, 0, 0, 0, 128, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_45hw6"]
+[sub_resource type="Curve2D" id="Curve2D_yfjbb"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -64, 0, 0, 0, 0, 0, -64, -160, 0, 0, 0, 0, 384, -160, 0, 0, 0, 0, 384, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_a615y"]
+[sub_resource type="Curve2D" id="Curve2D_y3slt"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -128, 0, 0, 0, 0, 0, -128, -160, 0, 0, 0, 0, 320, -160, 0, 0, 0, 0, 320, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_1q6f6"]
+[sub_resource type="Curve2D" id="Curve2D_n67gf"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -192, 0, 0, 0, 0, 0, -192, -160, 0, 0, 0, 0, 256, -160, 0, 0, 0, 0, 256, 0, 0, 0, 0, 0, 0, 0)
 }
 point_count = 6
 
-[sub_resource type="Curve2D" id="Curve2D_it2g0"]
+[sub_resource type="Curve2D" id="Curve2D_6as3u"]
 resource_local_to_scene = true
 _data = {
 "points": PackedVector2Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -256, 0, 0, 0, 0, 0, -256, -160, 0, 0, 0, 0, 192, -160, 0, 0, 0, 0, 192, 0, 0, 0, 0, 0, 0, 0)
@@ -2010,7 +2010,7 @@ polygon = PackedVector2Array(1600, -464, 1600, -336, 2256, -224, 6400, -288, 641
 
 [node name="FloaterPath" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(304, 128)
-curve = SubResource("Curve2D_8lkwm")
+curve = SubResource("Curve2D_2baoq")
 speed = 50
 metadata/_edit_group_ = true
 
@@ -2023,7 +2023,7 @@ frame = 1
 
 [node name="FloaterPath2" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(1536, 288)
-curve = SubResource("Curve2D_lc61y")
+curve = SubResource("Curve2D_pvkbi")
 speed = 50
 metadata/_edit_group_ = true
 
@@ -2032,7 +2032,7 @@ position = Vector2(80, 160)
 
 [node name="FloaterPath3" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(1696, 224)
-curve = SubResource("Curve2D_myiq0")
+curve = SubResource("Curve2D_qsif6")
 speed = 50
 metadata/_edit_group_ = true
 
@@ -2041,7 +2041,7 @@ position = Vector2(80, 80)
 
 [node name="FloaterPath4" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(1856, 304)
-curve = SubResource("Curve2D_88ls5")
+curve = SubResource("Curve2D_ocpig")
 speed = 50
 metadata/_edit_group_ = true
 
@@ -2051,7 +2051,7 @@ progress = 112.0
 
 [node name="FloaterPath5" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(3129, 712)
-curve = SubResource("Curve2D_j83ih")
+curve = SubResource("Curve2D_rud8x")
 speed = 50
 metadata/_edit_group_ = true
 
@@ -2064,12 +2064,12 @@ position = Vector2(2696, 944)
 
 [node name="FloaterPath6" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(5000, 792)
-curve = SubResource("Curve2D_n8hu0")
+curve = SubResource("Curve2D_xo1g4")
 metadata/_edit_group_ = true
 
 [node name="FloaterPath7" parent="FloaterEnnemies" instance=ExtResource("4")]
 position = Vector2(5000, 928)
-curve = SubResource("Curve2D_4r4be")
+curve = SubResource("Curve2D_sgnf0")
 metadata/_edit_group_ = true
 
 [node name="MovingSpikerEnnemies" type="Node2D" parent="."]
@@ -2078,49 +2078,49 @@ metadata/_edit_group_ = true
 
 [node name="SpikerPath" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3584, 704)
-curve = SubResource("Curve2D_d72g5")
+curve = SubResource("Curve2D_hpvwk")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath2" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3712, 704)
-curve = SubResource("Curve2D_3jbyf")
+curve = SubResource("Curve2D_85dv6")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath3" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3840, 704)
-curve = SubResource("Curve2D_bvuwj")
+curve = SubResource("Curve2D_ifbmy")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath4" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3968, 704)
-curve = SubResource("Curve2D_ibw1e")
+curve = SubResource("Curve2D_twnqo")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath5" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3648, 512)
-curve = SubResource("Curve2D_oo2m4")
+curve = SubResource("Curve2D_4qqf1")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath6" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3776, 512)
-curve = SubResource("Curve2D_lhc5q")
+curve = SubResource("Curve2D_dbvay")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath7" parent="MovingSpikerEnnemies/Group1" instance=ExtResource("15_r3rsr")]
 position = Vector2(3904, 512)
-curve = SubResource("Curve2D_1mudy")
+curve = SubResource("Curve2D_7bpfd")
 speed = 80
 metadata/_edit_group_ = true
 
 [node name="SpikerPath8" parent="MovingSpikerEnnemies" instance=ExtResource("15_r3rsr")]
 position = Vector2(4340, 900)
-curve = SubResource("Curve2D_7rwny")
+curve = SubResource("Curve2D_awt3d")
 metadata/_edit_group_ = true
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/SpikerPath8" index="0"]
@@ -2131,7 +2131,7 @@ position = Vector2(5312, 871)
 
 [node name="SpikerPath" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(448, -199)
-curve = SubResource("Curve2D_2e36w")
+curve = SubResource("Curve2D_yeiua")
 speed = 200
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/Group2/SpikerPath" index="0"]
@@ -2140,7 +2140,7 @@ progress = 640.0
 
 [node name="SpikerPath2" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(448, -263)
-curve = SubResource("Curve2D_j2ngm")
+curve = SubResource("Curve2D_balkf")
 speed = 200
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/Group2/SpikerPath2" index="0"]
@@ -2149,7 +2149,7 @@ progress = 640.0
 
 [node name="SpikerPath3" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(384, -263)
-curve = SubResource("Curve2D_vrkfc")
+curve = SubResource("Curve2D_14y4f")
 speed = 200
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/Group2/SpikerPath3" index="0"]
@@ -2158,7 +2158,7 @@ progress = 640.0
 
 [node name="SpikerPath4" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(320, -263)
-curve = SubResource("Curve2D_r5a31")
+curve = SubResource("Curve2D_esml6")
 speed = 200
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/Group2/SpikerPath4" index="0"]
@@ -2167,12 +2167,12 @@ progress = 640.0
 
 [node name="SpikerPath5" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(64, 89)
-curve = SubResource("Curve2D_45hw6")
+curve = SubResource("Curve2D_yfjbb")
 speed = 200
 
 [node name="SpikerPath6" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(128, 89)
-curve = SubResource("Curve2D_a615y")
+curve = SubResource("Curve2D_y3slt")
 speed = 200
 
 [node name="SpikerFollow" parent="MovingSpikerEnnemies/Group2/SpikerPath6" index="0"]
@@ -2180,12 +2180,12 @@ metadata/_edit_group_ = true
 
 [node name="SpikerPath7" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(192, 89)
-curve = SubResource("Curve2D_1q6f6")
+curve = SubResource("Curve2D_n67gf")
 speed = 200
 
 [node name="SpikerPath8" parent="MovingSpikerEnnemies/Group2" instance=ExtResource("15_r3rsr")]
 position = Vector2(256, 89)
-curve = SubResource("Curve2D_it2g0")
+curve = SubResource("Curve2D_6as3u")
 speed = 200
 metadata/_edit_group_ = true
 
